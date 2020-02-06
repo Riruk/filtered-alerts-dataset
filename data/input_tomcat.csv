@@ -1,0 +1,74 @@
+project,repo,commit,vuln_id,vuln_description
+tomcat60,https://github.com/apache/tomcat,580ff7b,CVE-2011-2526,Fix various sendfile issues.
+tomcat60,https://github.com/apache/tomcat,8a7de46,CVE-2011-2204,Prevent user passwords appearing in log files if a runtime exception (e.g. OOME) occurs while creating a new user for a MemoryUserDatabase via JMX.
+tomcat60,https://github.com/apache/tomcat,9bbce77,CVE-2009-3555,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=50325 Use JVM provided solutions to CVE-2009-3555 if available (i.e. RFC 5746 support)
+tomcat60,https://github.com/apache/tomcat,c6174c9,CVE-2010-4172,Multiple XSS in Manager web application
+tomcat60,https://github.com/apache/tomcat,ded2266,CVE-2010-1157,Prevent possible disclosure of host name or IP address via the HTTP WWW-Authenticate header when using BASIC or DIGEST authentication.
+tomcat60,https://github.com/apache/tomcat,83d6ca9,CVE-2008-1947,Fix potential XSS in host-manager. This is CVE-2008-1947.
+tomcat60,https://github.com/apache/tomcat,901292c,CVE-2007-5461,
+tomcat60,https://github.com/apache/tomcat,1bc3bcb,CVE-2007-2450,Fix XSS issue in Manager and Host Manager. This is CVE-2007-2450.
+tomcat70,https://github.com/apache/tomcat,5794601,CVE-2014-0050,DoS with malformed Content-Type header and multipart request processing. Update to latest code (r1565163) from Commons FileUpload
+tomcat70,https://github.com/apache/tomcat,ec7ff88,CVE-2007-0450,Merged revision 1203091 from tomcat/trunk: - Align %2f handling (aka CVE-2007-0450 fix) between implementations of UDecoder.convert(). - Make convert(MessageBytes) to consistently throw an IOException, even if it calls convert(String). (convert(String) and convert(CharChunk) are rare cases with little impact and inherent bug: hardcoded handling of %xx as ISO-8859-1). Updated changelog.
+tomcat70,https://github.com/apache/tomcat,90ec967,CVE-2011-3190,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=51698 Fix CVE-2011-3190 Prevent AJP request forgery via unread request body packet
+tomcat70,https://github.com/apache/tomcat,6a71454,CVE-2011-2526,When running under a security manager and using sendfile, validate sendfile attributes to prevent sendfile being used to bypass the security manager. Part of the fix for CVE-2011-2526
+tomcat70,https://github.com/apache/tomcat,0ecc464,CVE-2011-2204,Prevent user passwords appearing in log files if a runtime exception (e.g. OOME) occurs while creating a new user for a MemoryUserDatabase via JMX.
+tomcat70,https://github.com/apache/tomcat,525561b,CVE-2011-2481,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=51395 Better fix for memory leak that aligns ContextConfig with TldConfig Fix part 3 of 3 for CVE-2011-2481
+tomcat70,https://github.com/apache/tomcat,ad1524e,CVE-2011-1582,Use the correct classloader This is the fix for CVE-2011-1582
+tomcat70,https://github.com/apache/tomcat,5aef561,CVE-2011-1184,Add additional configuration options to the DIGEST authenticator This is the fix for CVE-2011-1184
+tomcat70,https://github.com/apache/tomcat,f3068c0,CVE-2011-1183,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=12428 Add optional support for preemptive authentication on a per context basis Based on a patch suggested by Werner Donn This includes the fix for CVE-2011-1183
+tomcat70,https://github.com/apache/tomcat,6163f53,CVE-2011-1475,Protect against things going wrong during access logging. An un-handled exception here could trigger some unexpected code paths. Possible contributing factor to https://issues.apache.org/bugzilla/show_bug.cgi?id=50957 ? This is part of the fix for CVE-2011-1475
+tomcat70,https://github.com/apache/tomcat,0a5a19f,CVE-2011-1088,Fix unit test failures
+tomcat70,https://github.com/apache/tomcat,69ef147,CVE-2010-4476,Improve HTTP specification compliance This works-around the Oracle JVM bug that triggers a DoS. CVE-2010-4476.
+tomcat70,https://github.com/apache/tomcat,ba55198,CVE-2011-0534,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=50631 InternalNioInputBuffer should honor maxHttpHeadSize This addresses CVE-2011-0534
+tomcat70,https://github.com/apache/tomcat,2d4ca03,CVE-2009-3555,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=50325 Use JVM provided solutions to CVE-2009-3555 if available (i.e. RFC 5746 support)
+tomcat70,https://github.com/apache/tomcat,c8a9a43,CVE-2011-0013,Prevent XSS in Manager application This addresses CVE-2011-0013
+tomcat70,https://github.com/apache/tomcat,afd4b3b,CVE-2010-4172,Multiple XSS in Manager web application
+tomcat70,https://github.com/apache/tomcat,cad9cac,CVE-2010-3718,Ensure work dir attribute is made read-only CVE-2010-3718
+tomcat70,https://github.com/apache/tomcat,cf51066,CVE-2010-1622,Return copies of the URL array rather than the original. This facilitated CVE-2010-1622 although the root cause was in the Spring Framework. Returning a copy in this case seems like a good idea.
+tomcat70,https://github.com/apache/tomcat,692608f,CVE-2010-2227,Arrange filter logic. This is the fix for CVE-2010-2227.
+tomcat70,https://github.com/apache/tomcat,6372b7b,CVE-2010-1157,Prevent possible disclosure of host name or IP address via the HTTP WWW-Authenticate header when using BASIC or DIGEST authentication.
+tomcat70,https://github.com/apache/tomcat,b2496f0,CVE-2008-5515,Remove 3 of the essentially 4 duplicate normalise implementations. Minor tweaks where required to use the new single implementation. Remove unnecessary normalisation calls. This includes the fix for CVE-2008-5515.
+tomcat70,https://github.com/apache/tomcat,5f00d43,CVE-2008-1947,Fix potential XSS in host-manager. This is CVE-2008-1947.
+tomcat80,https://github.com/apache/tomcat,b3a4e57,CVE-2014-0050,DoS with malformed Content-Type header and multipart request processing. Update to latest code (r1565159) from Commons FileUpload
+tomcat80,https://github.com/apache/tomcat,30b8b35,CVE-2013-4590,Add an option to the Context to control the blocking of XML external entities when parsing XML configuration files and enable this blocking by default. The block is implemented via a custom resolver to enable the logging of any blocked entities. This is the fix for CVE-2013-4590.
+tomcat80,https://github.com/apache/tomcat,c806b2f,CVE-2013-4322,Improve parsing of trailing headers This is part of the fix for CVE-2013-4322.
+tomcat80,https://github.com/apache/tomcat,f0a7dc3,CVE-2013-4286,Better adherence to RFC2616 for content-length headers This is the fix for CVE-2013-4286.
+tomcat80,https://github.com/apache/tomcat,4896bbc,CVE-2011-3190,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=51698 Fix CVE-2011-3190 Prevent AJP request forgery via unread request body packet
+tomcat80,https://github.com/apache/tomcat,eb6416f,CVE-2011-2526,When running under a security manager and using sendfile, validate sendfile attributes to prevent sendfile being used to bypass the security manager. Part of the fix for CVE-2011-2526
+tomcat80,https://github.com/apache/tomcat,5fa3732,CVE-2011-2204,Prevent user passwords appearing in log files if a runtime exception (e.g. OOME) occurs while creating a new user for a MemoryUserDatabase via JMX.
+tomcat80,https://github.com/apache/tomcat,3bbcc30,CVE-2011-2481,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=51395 Better fix for memory leak that aligns ContextConfig with TldConfig Fix part 3 of 3 for CVE-2011-2481
+tomcat80,https://github.com/apache/tomcat,6982cfe,CVE-2011-1582,Use the correct classloader This is the fix for CVE-2011-1582
+tomcat80,https://github.com/apache/tomcat,511eff8,CVE-2011-1184,Add additional configuration options to the DIGEST authenticator This is the fix for CVE-2011-1184
+tomcat80,https://github.com/apache/tomcat,b06f063,CVE-2011-1183,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=12428 Add optional support for preemptive authentication on a per context basis Based on a patch suggested by Werner Donn This includes the fix for CVE-2011-1183
+tomcat80,https://github.com/apache/tomcat,57f9f75,CVE-2011-1475,Protect against things going wrong during access logging. An un-handled exception here could trigger some unexpected code paths. Possible contributing factor to https://issues.apache.org/bugzilla/show_bug.cgi?id=50957 ? This is part of the fix for CVE-2011-1475
+tomcat80,https://github.com/apache/tomcat,1b2d5e9,CVE-2011-1088,Fix unit test failures
+tomcat80,https://github.com/apache/tomcat,30ee060,CVE-2010-4476,Improve HTTP specification compliance This works-around the Oracle JVM bug that triggers a DoS.
+tomcat80,https://github.com/apache/tomcat,f00e90d,CVE-2011-0534,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=50631 InternalNioInputBuffer should honor maxHttpHeadSize This addresses CVE-2011-0534
+tomcat80,https://github.com/apache/tomcat,14e4efd,CVE-2009-3555,Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=50325 Use JVM provided solutions to CVE-2009-3555 if available (i.e. RFC 5746 support)
+tomcat80,https://github.com/apache/tomcat,493ba61,CVE-2011-0013,Prevent XSS in Manager application This addresses CVE-2011-0013
+tomcat80,https://github.com/apache/tomcat,2f0f80a,CVE-2010-4172,Multiple XSS in Manager web application
+tomcat80,https://github.com/apache/tomcat,835f85e,CVE-2010-3718,Ensure work dir attribute is made read-only CVE-2010-3718
+tomcat80,https://github.com/apache/tomcat,82da759,CVE-2010-1622,Return copies of the URL array rather than the original. This facilitated CVE-2010-1622 although the root cause was in the Spring Framework. Returning a copy in this case seems like a good idea.
+tomcat80,https://github.com/apache/tomcat,d76b3b7,CVE-2010-2227,Arrange filter logic. This is the fix for CVE-2010-2227.
+tomcat80,https://github.com/apache/tomcat,1bc31be,CVE-2010-1157,Prevent possible disclosure of host name or IP address via the HTTP WWW-Authenticate header when using BASIC or DIGEST authentication.
+tomcat80,https://github.com/apache/tomcat,c520031,CVE-2008-5515,Remove 3 of the essentially 4 duplicate normalise implementations. Minor tweaks where required to use the new single implementation. Remove unnecessary normalisation calls. This includes the fix for CVE-2008-5515.
+tomcat80,https://github.com/apache/tomcat,78ad0fc,CVE-2008-1947,Fix potential XSS in host-manager. This is CVE-2008-1947.
+tomcat80,https://github.com/apache/tomcat,1e7b31e,CVE-2007-5461,
+tomcat80,https://github.com/apache/tomcat,910bc38,CVE-2007-2450,Fix XSS issue in Manager and Host Manager. This is CVE-2007-2450.
+tomcat85,https://github.com/apache/tomcat,bc8717f,CVE-2016-0763,Protect initialization of ResourceLinkFactory when running with a SecurityManager. This is the fix for CVE-2016-0763
+tomcat85,https://github.com/apache/tomcat,e1b1002,CVE-2016-0714,When using the new sessionAttributeValueClassNameFilter, apply the filter earlier rather than loading the class and then deciding to filter it out. When a SecurityManager is used, enable filtering by default. This is part 2 of 2 of the fix for CVE-2016-0714
+tomcat85,https://github.com/apache/tomcat,0dd9e78,CVE-2015-5346,Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=58809 Correctly recycle the cookies when mapping requests for parallel deployment This is part 2 of 2 of the fix for CVE-2015-5346
+tomcat85,https://github.com/apache/tomcat,127d8ea,CVE-2015-5345,Additional fix for BZ 58660 When Mapper root redirect is enabled, ensure '/' is added to path for redirect This is part 3 of 3 of the fix for CVE-2015-5345
+tomcat85,https://github.com/apache/tomcat,78688b0,CVE-2015-5174,More normalization edge cases This is part 2 of 2 of the fix for CVE-2015-5174
+tomcat85,https://github.com/apache/tomcat,8cf3d4a,CVE-2014-7810,Remove some more unnecessary code. This is part of the fix for CVE-2014-7810
+tomcat85,https://github.com/apache/tomcat,cf7869c,CVE-2014-0230,Add a new limit, defaulting to 2MB, for the amount of data Tomcat will swallow for an aborted upload. This is the fix for CVE-2014-0230
+tomcat85,https://github.com/apache/tomcat,b86c307,CVE-2014-0227,i18n for ChunkedInputFilter error message Add error flag to allow subsequent attempts at reading after an error to fail fast This is the fix for CVE-2014-0227
+tomcat85,https://github.com/apache/tomcat,8828a99,CVE-2014-0099,Fix possible overflow when parsing long values from a byte array. This is the fix for CVE-2014-0099
+tomcat85,https://github.com/apache/tomcat,8d67386,CVE-2014-0096,Prevent user supplied XSLTs from defining external entities This is part 2 of 2 of the fix for CVE-2014-0096
+tomcat85,https://github.com/apache/tomcat,1bd7d41,CVE-2014-0095,Correct regression introduced in 8.0.0-RC2 as part of the Servlet 3.1 non-blocking IO support that broke handling of requests with an explicit content length of zero. This is the fix for CVE-2014-0095
+tomcat85,https://github.com/apache/tomcat,0b45efe,CVE-2014-0075,Improve processing of chuck size from chunked headers. Avoid overflow and use a bit shift instead of a multiplication as it is marginally faster. This is the fix for CVE-2014-0075
+tomcat85,https://github.com/apache/tomcat,a5c7227,CVE-2014-0050, DoS with malformed Content-Type header and multipart request processing. Update to latest code (r1565159) from Commons FileUpload
+tomcat85,https://github.com/apache/tomcat,78dd7e6,CVE-2013-4590,Add an option to the Context to control the blocking of XML external entities when parsing XML configuration files and enable this blocking by default. The block is implemented via a custom resolver to enable the logging of any blocked entities. This is the fix for CVE-2013-4590.
+tomcat85,https://github.com/apache/tomcat,fb1433b,CVE-2013-4322,Improve parsing of trailing headers This is part of the fix for CVE-2013-4322.
+tomcat85,https://github.com/apache/tomcat,52241c9,CVE-2013-4286,Better adherence to RFC2616 for content-length headers This is the fix for CVE-2013-4286.
+tomcat85,https://github.com/apache/tomcat,26f3f09,CVE-2011-2526,Protect against crashes in the HTTP APR connector if sendfile is configured to send more data than is available in the file. Part of the fix for CVE-2011-2526
